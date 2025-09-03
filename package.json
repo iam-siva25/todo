@@ -1,6 +1,6 @@
 {
-  "name": "todos",
-  "homepage": "https://manav-gopal.github.io/todo",
+  "name": "todos-main",
+ 
   "version": "1.0.0",
   "private": true,
   "dependencies": {
