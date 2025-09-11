@@ -1,0 +1,139 @@
+.to-do-list {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: calc(100% - 100px);
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.Add-Button {
+  width: 90px;
+  height: 32px;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 32px;
+  text-align: center;
+  color: #333;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.Add-Button:hover {
+  background-color: #b0b0b0;
+  text-decoration: none;
+}
+
+ol {
+  padding-left: 30px; /* Space for numbers */
+  margin: 20px 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li::marker {
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+li span {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #333;
+  margin-left: 10px; /* Space between number and task text */
+}
+
+li button {
+  width: 80px;
+  height: 32px;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 32px;
+  text-align: center;
+  color: #333;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-left: 8px;
+  box-sizing: border-box;
+}
+
+li button:hover {
+  background-color: #b0b0b0;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .to-do-list {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .Add-Button {
+    width: 100%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  li span {
+    margin-left: 0; /* Adjust for stacked layout */
+  }
+}

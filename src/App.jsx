@@ -1,8 +1,16 @@
 import React from "react";
-import { Todos } from "./components/Todos";
+
+import ToDoList from "./ToDoList"; // Import the ToDoList component
 
 function App() {
-  return <Todos />
+  return (
+    <>
+     
+      <ToDoList />
+
+      
+    </>
+  );
 }
 
 export default App;
